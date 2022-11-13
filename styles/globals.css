@@ -1,26 +1,83 @@
+@font-face {
+  font-family: 'Nunito-Regular';
+  src: url('../assets/fonts/static/Nunito-Regular.ttf');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Nunito-Bold';
+  src: url('../assets/fonts/static/Nunito-Bold.ttf');
+  font-weight: 400;
+  font-style: normal;
+}
+
 html,
 body {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: 'Nunito-Regular' !important;
 }
 
 a {
   color: inherit;
-  text-decoration: none;
+  text-decoration: none !important;
 }
 
 * {
   box-sizing: border-box;
 }
 
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
+@media (max-width:780px) {
+  #menu {
+    display: none !important;
   }
-  body {
-    color: white;
-    background: black;
+
+  .top-menu {
+    display: none !important;
   }
 }
+
+@media (min-width:780px) {
+  .top-menu-responsive {
+    display: none !important;
+  }
+}
+
+.nav-item-bu {
+  padding: .5rem 1rem !important;
+  cursor: pointer;
+  margin-top: .5rem !important;
+  color: #8A8C8D;
+}
+
+.nav-item-bu:hover {
+  /* border-bottom: 1px solid #dee2e6 !important; */
+  border-radius: 10px;
+  color: #000000;
+  background-color: #f0f3f6;
+  ;
+}
+
+.nav-item-top-bu {
+  padding-top: .5rem !important;
+  margin-right: 1rem !important;
+}
+
+/* .dropdown-toggle::after {
+  content: none !important;
+} */
+
+.c-pointer {
+  cursor: pointer !important;
+}
+
+.z-index-modal {
+  z-index: 1060;
+}
+
+/* .accordion-button:not(.collapsed) {
+  color: #000000 !important;
+  background-color: #d9d9d9 !important;
+  box-shadow: inset 0 -1px 0 rgba(0, 0, 0, .125);
+} */
